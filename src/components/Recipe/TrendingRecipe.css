@@ -1,0 +1,79 @@
+/* TrendingRecipe.css */
+
+.recipe-container {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap:40px;
+    /* margin:30px; */
+    /* height: 100vh; */
+  }
+
+  .logo a{
+    text-decoration:none;
+    color:black
+  }
+  
+  .card-container {
+    width: 350px; /* Adjust width as needed */
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+
+  @media (max-width:600px){
+    .recipe-container {
+      padding: 30px 30px;
+      display: flex;
+      justify-content: space-around;
+      /* align-items: center; */
+      flex-wrap: wrap;
+      gap:40px;
+      /* margin:30px; */
+      /* height: 100vh; */
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 150px;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-title {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    
+    .card-text {
+      font-size: 16px;
+      color: #555;
+    }
+    
+  }

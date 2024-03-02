@@ -1,0 +1,127 @@
+
+
+.nav-container{
+    display:flex;
+    z-index: 1000;
+    justify-content:space-between;
+    padding:0px 160px;
+    font-size: x-large;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top:0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo{
+    font-weight: bold;
+    
+    
+}
+#span{
+    color:rgb(255, 51, 85);
+}
+.toggle-btn{
+    display:none
+}
+
+.nav-links ul{
+    list-style:none;
+    display: flex;
+    gap:30px;
+}
+.nav-links ul a{
+    font-size: large;
+
+    text-decoration:none;
+    /* text-align: center; */
+    text-transform: capitalize;
+    color:rgb(0, 0, 0)
+    /* font-weight: bold; */
+}
+.nav-links.show {
+    display: block;
+  }
+
+.login-btns button{
+    font-size: small;
+    padding:5px 20px;
+    border-radius: 10px;  
+    margin-left: 10px;
+    background-color: transparent;
+
+}
+
+@media (max-width:1440px){
+    .nav-container{
+        display:flex;
+        justify-content:space-between;
+        /* padding:20px 60px; */
+        align-items: center;
+        font-size: x-large;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+}
+
+
+@media (max-width:500px){
+    
+.nav-container{
+    position: sticky;
+    /* align-items: end; */
+
+    z-index: 1000;
+    top:0px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding:15px 20px;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    .nav-links{
+        display: none;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 10px;
+        /* border-bottom: 1px solid grey; */
+    }
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        /* margin-right: 20px; */
+        display: block;
+        margin: auto;
+        /* flex-direction: column; */
+        gap: 15px; 
+        width: 100%;
+      }
+
+      .nav-links ul a {
+        
+        text-decoration: none;
+        text-align: center;
+        text-transform: capitalize;
+        color: rgb(0, 0, 0);
+        font-size: large;
+      }
+    
+    .login-btns{
+        display: none;
+
+    }
+    .toggle-btn {
+        display: flex;
+        margin-bottom: 20px;
+        position: fixed;
+        right:20px;
+        height: 40px;
+        top:10px;
+      }
+
+      .toggle-btn.active {
+        display: none;
+      }
+
+}

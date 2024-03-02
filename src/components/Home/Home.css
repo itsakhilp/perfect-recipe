@@ -1,0 +1,57 @@
+.containers{
+    /* background-image: url(../../assets/pizz.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size:cover; */
+    /* background-size: contain; */
+}
+
+.food-data{
+    margin-left:150px;
+    margin-top:70px;
+    width: 450px;
+}
+
+.food-data h3{
+    font-size:42px;
+    /* color:red; */
+    font-weight: bold;
+    width: 330px;
+    text-transform: capitalize;
+
+    /* letter-spacing:0.1rem; */
+}
+
+.food-data button{
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+@media (max-width:400px){
+
+    .containers{
+        display: flex;flex-wrap: wrap;
+        background-position: top;
+    }
+    .food-data h3{
+        font-size:12px;
+        /* color:red; */
+        font-weight: bold;
+        width: 100px;
+
+        text-transform: capitalize;
+    
+        /* letter-spacing:0.1rem; */
+    }
+
+    .food-data{
+        margin-left:150px;
+        margin-top:70px;
+       display: flex;
+       flex-wrap: wrap;
+       width:100%
+    }
+}

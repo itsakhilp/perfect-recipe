@@ -1,0 +1,14 @@
+.box-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 160px;
+}
+
+
+@media (max-width:600px){
+    .box-container{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+}
