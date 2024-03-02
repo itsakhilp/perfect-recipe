@@ -4,6 +4,16 @@
     padding: 30px 160px;
 }
 
+.btn{
+    color: white;
+    background-color: black;
+}
+
+.btn:hover{
+    color:rgb(31, 30, 30);
+    background-color:rgb(14, 168, 0);
+}
+
 
 @media (max-width:600px){
     .box-container{
@@ -11,4 +21,5 @@
         flex-direction: column;
         padding: 30px 40px;
     }
+
 }

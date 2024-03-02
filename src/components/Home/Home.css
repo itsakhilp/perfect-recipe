@@ -21,6 +21,10 @@
     flex-wrap: wrap;
 }
 
+span{
+    color:rgb(255, 51, 85);
+}
+
 .content{
     align-items: center;
     margin: auto;
@@ -29,7 +33,7 @@
 .content h3{
     font-size:42px;
     font-weight: bold;
-    width: 330px;
+    width: 350px;
     text-transform: capitalize;
 }
 

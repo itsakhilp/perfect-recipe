@@ -3,6 +3,8 @@ import captImg from "../../assets/capt-food.jpg"
 import Home from "../Home/Home";
 import "../Recipe/ShareRecipe.css"
 import { useNavigate } from 'react-router-dom';
+import TrendingRecipe from "./TrendingRecipe";
+
 
 const ShareRecipe = () => {
   const navigate = useNavigate();
@@ -24,6 +26,9 @@ const ShareRecipe = () => {
                     <button onClick={handleCreateNew}>Create New Recipe</button>
             </div>
         </div>
+        
+        <h3 id='savedrecipes'>Saved Recipes</h3>
+        <TrendingRecipe/>
     </>
   )
 }

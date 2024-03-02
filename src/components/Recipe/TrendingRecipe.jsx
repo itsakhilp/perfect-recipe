@@ -1,78 +1,7 @@
-// import img from "../../assets/cof.jpg";
-// import "./TrendingRecipe.css";
-
-// const TrendingRecipe = () => {
-//   return (
-//     <>
-       
-//         <div className="recipe-container">
-//             <div className="card-container">
-//                 <div className="card">
-//                     <img src={img} alt="" className="card-img-top" />
-//                     <div className="card-body">
-//                         <h3 className="card-title">Recipe Title</h3>
-//                         <p className="card-text">Description of the recipe goes here.</p>
-//                         <p className="card-text">Additional details or ingredients</p>
-//                     </div>
-//                 </div>  
-//             </div>
-//             <div className="card-container">
-//                 <div className="card">
-//                     <img src={img} alt="" className="card-img-top" />
-//                     <div className="card-body">
-//                         <h3 className="card-title">Recipe Title</h3>
-//                         <p className="card-text">Description of the recipe goes here.</p>
-//                         <p className="card-text">Additional details or ingredients</p>
-//                     </div>
-//                 </div>  
-//             </div>
-//             <div className="card-container">
-//                 <div className="card">
-//                     <img src={img} alt="" className="card-img-top" />
-//                     <div className="card-body">
-//                         <h3 className="card-title">Recipe Title</h3>
-//                         <p className="card-text">Description of the recipe goes here.</p>
-//                         <p className="card-text">Additional details or ingredients</p>
-//                     </div>
-//                 </div>  
-//             </div><div className="card-container">
-//                 <div className="card">
-//                     <img src={img} alt="" className="card-img-top" />
-//                     <div className="card-body">
-//                         <h3 className="card-title">Recipe Title</h3>
-//                         <p className="card-text">Description of the recipe goes here.</p>
-//                         <p className="card-text">Additional details or ingredients</p>
-//                     </div>
-//                 </div>  
-//             </div><div className="card-container">
-//                 <div className="card">
-//                     <img src={img} alt="" className="card-img-top" />
-//                     <div className="card-body">
-//                         <h3 className="card-title">Recipe Title</h3>
-//                         <p className="card-text">Description of the recipe goes here.</p>
-//                         <p className="card-text">Additional details or ingredients</p>
-//                     </div>
-//                 </div>  
-//             </div><div className="card-container">
-//                 <div className="card">
-//                     <img src={img} alt="" className="card-img-top" />
-//                     <div className="card-body">
-//                         <h3 className="card-title">Recipe Title</h3>
-//                         <p className="card-text">Description of the recipe goes here.</p>
-//                         <p className="card-text">Additional details or ingredients</p>
-//                     </div>
-//                 </div>  
-//             </div>
-//         </div>
-//     </>
-//   )
-// }
-
-// export default TrendingRecipe;
-
-
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import "./TrendingRecipe.css"
+import foodimg from "../../assets/no-image.jpg" 
 
 export default function TrendingRecipe() {
   const [recipes, setRecipes] = useState([]);
@@ -85,6 +14,7 @@ export default function TrendingRecipe() {
         if (response.status === 200) {
           const data = response.data;
           // Convert object of objects to array of objects
+          console.log(data)
           const recipesArray = Object.keys(data).map(key => ({ id: key, ...data[key] }));
           setRecipes(recipesArray);
         } else {
@@ -100,17 +30,20 @@ export default function TrendingRecipe() {
 
   return (
     <div>
-      <h2>Recipe List</h2>
-      <ul>
+      <div className="recipe-container">
         {recipes.map(recipe => (
-          <li key={recipe.id}>
-            <h3>{recipe.recipeTitle}</h3>
-            <p>Description: {recipe.description}</p>
-            <p>Ingredients: {recipe.ingredients}</p>
-            {/* Render image here if needed */}
-          </li>
+          <div className="card-container" key={recipe.id}>
+            <div className="card">
+              <img src={foodimg} alt={recipe.recipeTitle} className="card-img-top" />
+              <div className="card-body">
+                <h3 className="card-title">{recipe.recipeTitle}</h3>
+                <p className="card-text"><span id="boldtitle">Description:</span> {recipe.description}</p>
+                <p className="card-text"><span id="boldtitle">Ingredients:</span> {recipe.ingredients}</p>
+              </div>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

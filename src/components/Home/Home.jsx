@@ -8,7 +8,7 @@ const Home = () => {
       <div className="containers">
         <div className="food-data">
             <div className="content">
-            <h3>Your daily dish a food journey</h3>
+            <h3>Your daily dish a <span>food</span> journey</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Voluptatibus iure excepturi, assumenda veniam aliquam doloremque?

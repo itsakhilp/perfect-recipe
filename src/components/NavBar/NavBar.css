@@ -30,9 +30,7 @@
 }
 .nav-links ul a{
     font-size: large;
-
     text-decoration:none;
-    /* text-align: center; */
     text-transform: capitalize;
     color:rgb(0, 0, 0)
     /* font-weight: bold; */
