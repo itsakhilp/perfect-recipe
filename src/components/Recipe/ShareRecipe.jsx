@@ -1,5 +1,6 @@
 // import React from 'react'
 import captImg from "../../assets/capt-food.jpg"
+import Home from "../Home/Home";
 import "../Recipe/ShareRecipe.css"
 import { useNavigate } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ const ShareRecipe = () => {
   }
   return (
     <>
+    <Home/>
         <div className="container">
             <div className="left-cont">
                 <img src={captImg} alt="" />
