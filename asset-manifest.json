@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/perfect-recipe/static/css/main.a2082039.css",
-    "main.js": "/perfect-recipe/static/js/main.e0bb0b3b.js",
+    "main.css": "/perfect-recipe/static/css/main.bd78cfec.css",
+    "main.js": "/perfect-recipe/static/js/main.a91dc50a.js",
     "static/js/453.01da0999.chunk.js": "/perfect-recipe/static/js/453.01da0999.chunk.js",
     "static/media/chef.png": "/perfect-recipe/static/media/chef.fb6066820c6f9b596c32.png",
     "static/media/capt-food.jpg": "/perfect-recipe/static/media/capt-food.36bce6d2dd7ce74be756.jpg",
     "static/media/no-image.jpg": "/perfect-recipe/static/media/no-image.ac838e17f16265aa57b4.jpg",
     "index.html": "/perfect-recipe/index.html",
-    "main.a2082039.css.map": "/perfect-recipe/static/css/main.a2082039.css.map",
-    "main.e0bb0b3b.js.map": "/perfect-recipe/static/js/main.e0bb0b3b.js.map",
+    "main.bd78cfec.css.map": "/perfect-recipe/static/css/main.bd78cfec.css.map",
+    "main.a91dc50a.js.map": "/perfect-recipe/static/js/main.a91dc50a.js.map",
     "453.01da0999.chunk.js.map": "/perfect-recipe/static/js/453.01da0999.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2082039.css",
-    "static/js/main.e0bb0b3b.js"
+    "static/css/main.bd78cfec.css",
+    "static/js/main.a91dc50a.js"
   ]
 }
