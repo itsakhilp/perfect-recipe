@@ -37,8 +37,8 @@ export default function TrendingRecipe() {
               <img src={foodimg} alt={recipe.recipeTitle} className="card-img-top" />
               <div className="card-body">
                 <h3 className="card-title">{recipe.recipeTitle}</h3>
-                <p className="card-text"><span id="boldtitle">Description:</span> {recipe.description}</p>
-                <p className="card-text"><span id="boldtitle">Ingredients:</span> {recipe.ingredients}</p>
+                <p className="card-text"><span id="boldtitle">Description:<br></br> </span> {recipe.description}</p>
+                <p className="card-text"><span id="boldtitle">Ingredients:<br></br></span> {recipe.ingredients}</p>
               </div>
             </div>
           </div>
@@ -47,3 +47,5 @@ export default function TrendingRecipe() {
     </div>
   );
 }
+
+

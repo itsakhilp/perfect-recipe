@@ -45,6 +45,7 @@ const NavBar = () => {
           <ToggleButton
             value="right"
             // maxHeight= '10px'
+            size="small"
             aria-label="right aligned"
             onClick={() => {
               setShowLinks(!showLinks);

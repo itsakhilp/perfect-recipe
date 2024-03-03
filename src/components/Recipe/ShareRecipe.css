@@ -15,6 +15,7 @@
     text-align:center;
     justify-content: center;
     margin: auto;
+    
 }
 .right-cont span{
     color: rgb(255, 51, 85);
@@ -41,7 +42,16 @@
     width: 450px;
 }
 
-@media (max-width:500px){
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 15px;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width:600px){
     .container{
         flex-direction: column;
         flex-wrap: wrap;
@@ -57,7 +67,7 @@
     }
     
     .right-cont{
-        line-height: normal;
+        line-height: 1;
     }
 
     .right-cont h2{
@@ -68,7 +78,7 @@
     }
     .right-cont p{
         margin-top: 5px;;
-        font-size:16px; 
+        font-size:12px; 
         width: 100%;
     }
     .left-cont img{
