@@ -3,8 +3,8 @@ import captImg from "../../assets/capt-food.jpg"
 import Home from "../Home/Home";
 import "../Recipe/ShareRecipe.css"
 import { useNavigate } from 'react-router-dom';
-import TrendingRecipe from "./TrendingRecipe"
 import Footer from "../Footer/Footer";
+import MyRecipes from "./MyRecipes";
 
 
 const ShareRecipe = () => {
@@ -28,8 +28,8 @@ const ShareRecipe = () => {
             </div>
         </div>
         
-        <h3 id='savedrecipes'>Saved Recipes</h3>
-        <TrendingRecipe/>
+        {/* <h3 id='savedrecipes'>Saved Recipes</h3> */}
+        <MyRecipes/>
         <Footer/>
     </>
   )

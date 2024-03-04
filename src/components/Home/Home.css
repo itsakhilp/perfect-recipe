@@ -43,9 +43,56 @@ span{
     background-color: transparent;
 }
 
+@media (max-width: 1024px){
+    .food-img img{
+        height:40vh;
+        width: auto;
+    }
+    .food-img{
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        /* margin: 0; */
+        align-items: center;
+        margin: auto;
+        padding: auto;
+       
+    }
+}
 
 @media (max-width:768px){
-
+    .food-img img{
+        height:350px;
+        width: auto;
+    }
+    .food-img{
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        /* margin: 0; */
+        align-items: center;
+        margin: auto;
+        padding: auto;
+       
+    }
+    .content{
+        align-items: center;
+        margin: auto;
+        padding: auto;
+    }
+    .content h3{
+        font-size:22px;
+        font-weight: bold;
+        width: auto;
+        text-transform: capitalize;
+    }
+    
+.food-data{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
     
 }
 

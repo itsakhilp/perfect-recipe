@@ -31,7 +31,7 @@ const NavBar = () => {
               <Link to="/add-recipe" onClick={handleClick}>Add Recipe</Link>
             </li>
             <li>
-              <Link to="/" onClick={handleClick}>About</Link>
+              <Link to="/recipes" onClick={handleClick}>My Recipes</Link>
             </li>
           </ul>
         </div>
